@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { PhotoShareComponent } from './photo-share/photo-share.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhotoShareComponent
   ],
   imports: [
     BrowserModule
