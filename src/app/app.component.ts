@@ -27,14 +27,14 @@ export class AppComponent implements OnInit {
         title: 'Quentin',
         description: 'Développeur C#',
         created: new Date(),
-        snapNumber: 10,
+        snapNumber: 100,
         imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg'
       },
       {
         title: 'Marcel',
         description: 'Gestionnaire DB',
         created: new Date(),
-        snapNumber: 15,
+        snapNumber: 200,
         imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg'
       }
     ];

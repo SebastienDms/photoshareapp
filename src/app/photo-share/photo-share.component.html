@@ -8,7 +8,7 @@
         <button type="button" (click)="onSnap()">
             {{txtBtnSnapped}}
         </button>
-        {{faceSnap.snapNumber}}
+        <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snapNumber + ', 0)' }">{{faceSnap.snapNumber}}</span>
     </p>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
 </div>
