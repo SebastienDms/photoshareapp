@@ -14,7 +14,7 @@ export class PhotoShareListeComponent implements OnInit {
   faceSnaps!: FaceSnap[];
 
   ngOnInit(): void {
-    this.faceSnaps = this.photosShareService.faceSnaps;
+    this.faceSnaps = this.photosShareService.getAllPhotosShare();
   }
 
 }
