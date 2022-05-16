@@ -5,11 +5,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PhotoShareComponent } from './photo-share/photo-share.component';
 import * as fr_be from "@angular/common/locales/fr-BE";
+import { PhotoShareListeComponent } from './photo-share-liste/photo-share-liste.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoShareComponent
+    PhotoShareComponent,
+    PhotoShareListeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
