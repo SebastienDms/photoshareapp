@@ -5,7 +5,9 @@
     <h2>{{faceSnap.title | titlecase}}</h2>
     <p *ngIf="faceSnap.location">Vit à {{faceSnap.location}}.</p>
     <p>{{faceSnap.description}}</p>
-    <p>Mis en ligne le {{faceSnap.created}}</p>
+    <!-- <p>Mis en ligne le {{faceSnap.created | date}}</p>
+    <p>Mis en ligne le {{faceSnap.created | date: 'longDate'}}</p> -->
+    <p>Mis en ligne {{faceSnap.created | date: 'à HH:mm, le d MMMM yyyy'}}</p>
     <p>
         <button type="button" (click)="onSnap()">
             {{txtBtnSnapped}}
