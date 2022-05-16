@@ -1,6 +1,8 @@
 <div class="face-snap-card" [ngClass]="{ snapped: snapped}">
     <h1>photo-share works!</h1>
-    <h2>{{faceSnap.title}}</h2>
+    <!-- <h2>{{faceSnap.title | uppercase}}</h2>
+    <h2>{{faceSnap.title | lowercase}}</h2> -->
+    <h2>{{faceSnap.title | titlecase}}</h2>
     <p *ngIf="faceSnap.location">Vit à {{faceSnap.location}}.</p>
     <p>{{faceSnap.description}}</p>
     <p>Mis en ligne le {{faceSnap.created}}</p>
