@@ -9,16 +9,27 @@ import { PhotoShareListeComponent } from './photo-share-liste/photo-share-liste.
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
+import { InternCalendarComponent } from './intern-calendar/intern-calendar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     PhotoShareComponent,
     PhotoShareListeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    InternCalendarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // AppRoutingModule,
+
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    })
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-BE'}
