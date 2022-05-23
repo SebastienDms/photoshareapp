@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from '../models/face-snap.model';
-import { PhotosShareService } from '../services/photos-share.service';
+import { FaceSnap } from '../../../models/face-snap.model';
+import { PhotosShareService } from '../../../shared/services/photos-share.service';
 
 @Component({
   selector: 'app-photo-share-liste',
